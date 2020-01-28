@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row mt-5 justify-content-center">
+        <h2 class="heading"> User list </h2>
+    </div>
+</div>
+
+
+<div class="container" id="baseContainer">
+    <table class="table table-striped table-light table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userList">
+                <td>{{ user.user_id }}</td>
+                <td>{{ user.user_name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -11,4 +11,9 @@ module.exports = class logic {
         const result = await db.read('user');
         return result;
     }
+
+    async deleteUser() {
+        const result = await db.delete('user');
+        return result;
+    }
 }
